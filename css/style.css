@@ -1,0 +1,117 @@
+/* Algemene styling */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hero sectie met achtergrondafbeelding */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('../images/Afbeelding4-k-1.jpg') center/cover no-repeat;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+}
+
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+/* Navbar styling */
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #d4af37;
+}
+
+.navbar-brand:hover {
+    color: #b8941f;
+}
+
+.nav-link:hover {
+    color: #d4af37 !important;
+}
+
+/* Footer styling - BELANGRIJKSTE FIX */
+footer .text-muted {
+    color: #adb5bd !important;
+}
+
+footer h5 {
+    color: #ffc107 !important;
+}
+
+footer a {
+    color: #adb5bd !important;
+}
+
+footer a:hover {
+    color: #ffc107 !important;
+}
+
+.text-warning {
+    color: #ffc107 !important;
+}
+
+.btn-outline-warning {
+    color: #ffc107 !important;
+    border-color: #ffc107 !important;
+}
+
+.btn-outline-warning:hover {
+    background-color: #ffc107 !important;
+    color: #000 !important;
+}
+/* Logo Styling */
+.navbar-brand {
+    font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;
+    font-size: 2.5rem !important;
+    font-weight: bold !important;
+    color: #d87504 !important;
+    text-shadow: 2px 2px 4px    rgba(255, 115, 0, 0.15);
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.navbar-brand:hover {
+    color: #714a00 !important;
+    transform: scale(1.05);
+}
+
+.navbar-brand i {
+    display: none;
+}
+/* Prijzen badges styling */
+.badge.bg-warning {
+    background-color: #f0f0f0 !important; /* Zelfde oranje als logo */
+    color: rgb(0, 0, 0) !important;
+}
+/* Page Headers met achtergrondafbeelding */
+.page-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('../images/image1.jpeg') center/cover no-repeat;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    color: white !important;
+}
+
+.page-header h1,
+.page-header p {
+    color: white !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+/* Verschillende foto's per pagina */
+.page-header.menu-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                      url('../images/image4.jpeg');
+}
+
+.page-header.gallery-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                      url('../images/image11.jpeg');
+}
+
+.page-header.contact-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                      url('../images/image9.jpeg');
+}
