@@ -114,4 +114,45 @@ footer a:hover {
 .page-header.contact-header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
                       url('../images/image9.jpeg');
+}/* Minder padding en margin op telefoonschermen */
+@media (max-width: 576px) {
+
+    /* Kaarten compacter maken */
+    .card {
+        margin: 8px 0 !important;
+        padding: 10px !important;
+    }
+
+    /* Afbeeldingen minder hoog */
+    .card-img-top {
+        height: 150px !important;
+        object-fit: cover;
+    }
+
+    /* Tekst compacter */
+    .card-body {
+        padding: 10px !important;
+    }
+
+    /* Titel kleiner */
+    .card-title {
+        font-size: 1.1rem !important;
+    }
+
+    /* Prijs badge kleiner */
+    .badge {
+        font-size: 1rem !important;
+        padding: 6px 10px !important;
+    }
+
+    /* Info-knop compacter */
+    .btn-sm {
+        padding: 4px 8px !important;
+        font-size: 0.8rem !important;
+    }
+
+    /* Minder ruimte tussen kaarten */
+    .row.g-4 {
+        row-gap: 1rem !important;
+    }
 }
