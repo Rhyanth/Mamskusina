@@ -62,15 +62,22 @@ footer a:hover {
 }
 /* Logo Styling */
 .navbar-brand {
-    font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;
+    font-family: 'Kaushan Script', cursive;
     font-size: 2.5rem !important;
-    font-weight: bold !important;
+    font-weight: 600 !important;
     color: #d87504 !important;
     text-shadow: 2px 2px 4px    rgba(255, 115, 0, 0.15);
     transition: all 0.3s ease;
     letter-spacing: 0.5px;
 }
-
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 2.2rem !important;
+        font-weight: 900 !important;
+        letter-spacing: 1px;
+        text-shadow: 2px 2px 4px rgba(255, 115, 0, 0.25);
+    }
+}
 .navbar-brand:hover {
     color: #714a00 !important;
     transform: scale(1.05);
@@ -154,5 +161,39 @@ footer a:hover {
     /* Minder ruimte tussen kaarten */
     .row.g-4 {
         row-gap: 1rem !important;
+    }
+}
+/* Mobiele weergave: alles onder elkaar */
+@media (max-width: 768px) {
+
+    .row > [class*="col-"] {
+        width: 100%;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    .d-flex.justify-content-between.align-items-center {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 10px;
+    }
+
+    .badge {
+        font-size: 1rem !important;
+    }
+
+    .btn {
+        width: 100%;
+    }
+    /* Page Headers met achtergrondafbeelding */
+    .page-header {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../images/image1.jpeg') center/cover no-repeat;
+        min-height: unset;
+        display: flex;
+        align-items: center;
+        color: white !important;
     }
 }
