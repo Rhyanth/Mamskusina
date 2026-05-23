@@ -39,11 +39,18 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     formData.append('message', message);
 
     // Verstuur naar PHP backend
-    fetch("https://mamskusina.com/wp-content/backend/send-email.php", {
-        method: "POST",
-        headers: {"Content-Type": "application/json"},
-        body: JSON.stringify({name, phone, email, subject, message})
-
+    fetch('https://mamskusina.com/wp-content/backend/send-email.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            name,
+            email,
+            phone,
+            subject,
+            message
+        })
     })
         .then(response => response.json())
         .then(data => {
