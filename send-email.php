@@ -28,7 +28,8 @@ try {
     $mail->Port = 587;
 
     // Afzender & ontvanger
-    $mail->setFrom($email, $name);
+$mail->setFrom('mamskusinacontact@gmail.com', 'Website Contactformulier');
+$mail->addReplyTo($email, $name);
     $mail->addAddress('mamskusinacontact@gmail.com');
 
     // Inhoud
