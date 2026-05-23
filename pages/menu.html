@@ -3,12 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content-width=device-width, initial-scale=1.0">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Mam's Kusina - Authentiek Aziatisch Eten</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="../images/PHOTO-2025-12-22-23-44-25.jpg">
     <link rel="icon" type="image/png" href="../images/PHOTO-2025-12-22-23-44-25.jpg">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -18,127 +15,9 @@
 
     <!-- Eigen CSS -->
     <link rel="stylesheet" href="../css/style.css">
-
-    <style>
-
-        body {
-            background: #f8f9fa;
-        }
-
-        .menu-card {
-            border: none;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-            transition: 0.3s;
-        }
-
-        .menu-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .menu-card img {
-            height: 220px;
-            object-fit: cover;
-        }
-
-        .price {
-            background: #ffc107;
-            padding: 8px 14px;
-            border-radius: 12px;
-            font-weight: bold;
-        }
-
-        /* ===== MOBIEL ===== */
-        @media (max-width: 768px) {
-
-            .container {
-                padding-left: 18px;
-                padding-right: 18px;
-            }
-
-            /* ALLES 1 ONDER ELKAAR */
-            .row {
-                display: flex;
-                flex-direction: column;
-            }
-
-            .col-md-6,
-            .col-lg-4 {
-                width: 100%;
-            }
-
-            .menu-card {
-                width: 100%;
-                margin-bottom: 20px;
-            }
-
-            .menu-card img {
-                height: 240px;
-            }
-
-            .card-body {
-                padding: 20px;
-            }
-
-            .mobile-stack {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start !important;
-                gap: 12px;
-            }
-
-            .mobile-stack .btn {
-                width: 100%;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-
-            h2 {
-                font-size: 1.5rem;
-            }
-        }
-
-    </style>
-
 </head>
-
 <body>
 
-<!-- Navigatie -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
-    <div class="container">
-        <a class="navbar-brand" href="../index.html">
-            Mam's Kusina
-        </a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">Over Ons</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="menu.html">Menu</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="gallery.html">Galerij</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
 <!-- Navigatie -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
     <div class="container">
@@ -181,407 +60,325 @@
 </section>
 
 
-
 <!-- Maaltijden Sectie -->
 <section class="py-5 bg-light">
     <div class="container">
         <div class="text-center mb-5">
             <h2 class="fw-bold"><i class="fas fa-utensils text-warning"></i> Maaltijden</h2>
             <p class="text-muted">Kies een basis: Gebakken rijst, Gebakken noedels of Frietjes<br>
-                <!-- MENU -->
-            <section class="py-5">
-                <div class="container">
-                    <div class="text-center mb-5">
-                        <h2 class="fw-bold"><i class="fas fa-utensils text-warning"></i> Maaltijden</h2>
-                        <p class="text-muted">Kies een basis: Gebakken rijst, Gebakken noedels of Frietjes<br>
-                            Elke maaltijd wordt standaard geserveerd met een kiploempia!</p>
-                    </div>
-                </div>
+                Elke maaltijd wordt standaard geserveerd met een kiploempia!</p>
+        </div>
 
-                <div class="row g-4">
-                    <!-- Hamburger Menu -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card h-100 border-0 shadow">
-                            <img src="../images/image7.jpeg" class="card-img-top" alt="Hamburger Menu" style="height: 200px; object-fit: cover;">
-                            <div class="card-body">
-                                <h5 class="card-title">Hamburger Menu</h5>
-                                <p class="card-text text-muted">Sappige hamburger met verse ingrediënten en saus</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="badge bg-warning text-dark fs-5">€14,50</span>
-                                    <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#hamburgerModal">
-                                        <i class="fas fa-info-circle"></i> Info
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row g-4">
-
-                        <!-- Kip Saté Menu -->
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card h-100 border-0 shadow">
-                                <img src="../images/image1.jpeg" class="card-img-top" alt="Kip Saté Menu" style="height: 200px; object-fit: cover;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Kip Saté Menu</h5>
-                                    <p class="card-text text-muted">Gegrilde kip saté met pindasaus</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span class="badge bg-warning text-dark fs-5">€16,50</span>
-                                        <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#sateModal">
-                                            <i class="fas fa-info-circle"></i> Info
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- CARD -->
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card menu-card">
-                                <img src="../images/image7.jpeg" alt="Kip Saté">
-                                <div class="card-body">
-                                    <h4 class="fw-bold">
-                                        Kip Saté Menu
-                                    </h4>
-                                    <p class="text-muted">
-                                        Gegrilde kip saté met huisgemaakte pindasaus
-                                    </p>
-                                    <div class="d-flex justify-content-between align-items-center mobile-stack">
-                            <span class="price">
-                                €16,50
-                            </span>
-                                        <button class="btn btn-outline-warning">
-                                            <i class="fas fa-info-circle"></i>
-                                            Meer info
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Kip Kerrie Menu -->
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card h-100 border-0 shadow">
-                                <img src="../images/image4.jpeg" class="card-img-top" alt="Kip Kerrie Menu" style="height: 200px; object-fit: cover;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Kip Kerrie Menu</h5>
-                                    <p class="card-text text-muted">Malse kip in heerlijke kerriesaus</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span class="badge bg-warning text-dark fs-5">€16,50</span>
-                                        <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#kerrieModal">
-                                            <i class="fas fa-info-circle"></i> Info
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- CARD -->
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card menu-card">
-                                <img src="images/image11.jpeg" alt="Crispy Chicken">
-                                <div class="card-body">
-                                    <h4 class="fw-bold">
-                                        Crispy Chicken
-                                    </h4>
-                                    <p class="text-muted">
-                                        Krokante kip met speciale kruiden
-                                    </p>
-                                    <div class="d-flex justify-content-between align-items-center mobile-stack">
-                            <span class="price">
-                                €16,50
-                            </span>
-                                        <button class="btn btn-outline-warning">
-                                            <i class="fas fa-info-circle"></i>
-                                            Meer info
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Crispy Chicken Menu -->
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card h-100 border-0 shadow">
-                                <img src="../images/image11.jpeg" class="card-img-top" alt="Crispy Chicken Menu" style="height: 200px; object-fit: cover;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Crispy Chicken Menu</h5>
-                                    <p class="card-text text-muted">Krokant gebakken kip met een knapperige korst</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span class="badge bg-warning text-dark fs-5">€16,50</span>
-                                        <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#crispyModal">
-                                            <i class="fas fa-info-circle"></i> Info
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Cha Sieuw Menu -->
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card h-100 border-0 shadow">
-                                <img src="../images/image10.jpeg" class="card-img-top" alt="Cha Sieuw Menu" style="height: 200px; object-fit: cover;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Cha Sieuw Menu</h5>
-                                    <p class="card-text text-muted">Geroosterd Chinees varkensvlees</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span class="badge bg-warning text-dark fs-5">€17,50</span>
-                                        <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#chaSieuwModal">
-                                            <i class="fas fa-info-circle"></i> Info
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Beef Rendang Menu -->
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card h-100 border-0 shadow">
-                                <img src="../images/image12.jpeg" class="card-img-top" alt="Beef Rendang Menu" style="height: 200px; object-fit: cover;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Beef Rendang Menu</h5>
-                                    <p class="card-text text-muted">Pittig Indonesisch gestoofde rundvlees</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span class="badge bg-warning text-dark fs-5">€18,50</span>
-                                        <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#rendangModal">
-                                            <i class="fas fa-info-circle"></i> Info
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Mix Vlees Menu -->
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card h-100 border-0 shadow">
-                                <img src="../images/image9.jpeg" class="card-img-top" alt="Mix Vlees Menu" style="height: 200px; object-fit: cover;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Mix Vlees Menu</h5>
-                                    <p class="card-text text-muted">Combinatie van verschillende vleessoorten</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span class="badge bg-warning text-dark fs-5">€19,50</span>
-                                        <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#mixModal">
-                                            <i class="fas fa-info-circle"></i> Info
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Snacks Sectie -->
-            <section class="py-5">
-                <div class="container">
-                    <div class="text-center mb-5">
-                        <h2 class="fw-bold"><i class="fas fa-drumstick-bite text-warning"></i> Snacks</h2>
-                        <p class="text-muted">Perfecte bijgerechten of om te delen</p>
-                    </div>
-
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <div class="card border-0 shadow-sm">
-                                <div class="card-body d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <h5 class="mb-0">Kip Loempia</h5>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <span class="badge bg-warning text-dark fs-6">€1,50</span>
-                                        <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#kipLoempiaModal">
-                                            <i class="fas fa-info-circle"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="card border-0 shadow-sm">
-                                <div class="card-body d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <h5 class="mb-0">Shanghai Loempia</h5>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <span class="badge bg-warning text-dark fs-6">€1,50</span>
-                                        <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#shanghaiModal">
-                                            <i class="fas fa-info-circle"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="card border-0 shadow-sm">
-                                <div class="card-body d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <h5 class="mb-0">Vegetarisch Loempia</h5>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <span class="badge bg-warning text-dark fs-6">€1,75</span>
-                                        <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#veggieLoempiaModal">
-                                            <i class="fas fa-info-circle"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="card border-0 shadow-sm">
-                                <div class="card-body d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <h5 class="mb-0">Kip Pastei</h5>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <span class="badge bg-warning text-dark fs-6">€3,50</span>
-                                        <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#pasteiModal">
-                                            <i class="fas fa-info-circle"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="card border-0 shadow-sm">
-                                <div class="card-body d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <h5 class="mb-0">Roti Roll</h5>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <span class="badge bg-warning text-dark fs-6">€3,50</span>
-                                        <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#rotiModal">
-                                            <i class="fas fa-info-circle"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="card border-0 shadow-sm">
-                                <div class="card-body d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <h5 class="mb-0">Portie Siomai (3 stuks)</h5>
-                                        <small class="text-muted">Kip of varken</small>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <span class="badge bg-warning text-dark fs-6">€3,00</span>
-                                        <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#siomaiModal">
-                                            <i class="fas fa-info-circle"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="card border-0 shadow-sm">
-                                <div class="card-body d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <h5 class="mb-0">Portie Kip Dumplings (3 stuks)</h5>
-                                        <small class="text-muted">Kip of varken</small>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <span class="badge bg-warning text-dark fs-6">€3,50</span>
-                                        <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#dumplingsModal">
-                                            <i class="fas fa-info-circle"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="card border-0 shadow-sm">
-                                <div class="card-body d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <h5 class="mb-0">Portie Kip Saté (3 stokjes)</h5>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <span class="badge bg-warning text-dark fs-6">€7,00</span>
-                                        <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#sateSnackModal">
-                                            <i class="fas fa-info-circle"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="card border-0 shadow-sm">
-                                <div class="card-body d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <h5 class="mb-0">Portie Crispy Chicken</h5>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <span class="badge bg-warning text-dark fs-6">€7,00</span>
-                                        <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#crispySnackModal">
-                                            <i class="fas fa-info-circle"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="card border-0 shadow-sm">
-                                <div class="card-body d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <h5 class="mb-0">Portie Friet Met Saus</h5>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <span class="badge bg-warning text-dark fs-6">€4,25</span>
-                                        <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#frietModal">
-                                            <i class="fas fa-info-circle"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="card border-warning border-2 shadow">
-                                <div class="card-body d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <h5 class="mb-0">Snacks Platter</h5>
-                                        <small class="text-muted">Variatie van snacks</small>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <span class="badge bg-warning text-dark fs-6">€12,50</span>
-                                        <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#platterModal">
-                                            <i class="fas fa-info-circle"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- CARD -->
+        <div class="row g-4">
+            <!-- Hamburger Menu -->
             <div class="col-md-6 col-lg-4">
-                <div class="card menu-card">
-                    <img src="images/image12.jpeg" alt="Beef Rendang">
+                <div class="card h-100 border-0 shadow">
+                    <img src="../images/image7.jpeg" class="card-img-top" alt="Hamburger Menu" style="height: 200px; object-fit: cover;">
                     <div class="card-body">
-                        <h4 class="fw-bold">
-                            Beef Rendang
-                        </h4>
-                        <p class="text-muted">
-                            Pittig Indonesisch gestoofd rundvlees
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center mobile-stack">
-                            <span class="price">
-                                €18,50
-                            </span>
-                            <button class="btn btn-outline-warning">
-                                <i class="fas fa-info-circle"></i>
-                                Meer info
+                        <h5 class="card-title">Hamburger Menu</h5>
+                        <p class="card-text text-muted">Sappige hamburger met verse ingrediënten en saus</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-warning text-dark fs-5">€14,50</span>
+                            <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#hamburgerModal">
+                                <i class="fas fa-info-circle"></i> Info
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!-- Kip Saté Menu -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow">
+                    <img src="../images/image1.jpeg" class="card-img-top" alt="Kip Saté Menu" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Kip Saté Menu</h5>
+                        <p class="card-text text-muted">Gegrilde kip saté met pindasaus</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-warning text-dark fs-5">€16,50</span>
+                            <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#sateModal">
+                                <i class="fas fa-info-circle"></i> Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kip Kerrie Menu -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow">
+                    <img src="../images/image4.jpeg" class="card-img-top" alt="Kip Kerrie Menu" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Kip Kerrie Menu</h5>
+                        <p class="card-text text-muted">Malse kip in heerlijke kerriesaus</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-warning text-dark fs-5">€16,50</span>
+                            <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#kerrieModal">
+                                <i class="fas fa-info-circle"></i> Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Crispy Chicken Menu -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow">
+                    <img src="../images/image11.jpeg" class="card-img-top" alt="Crispy Chicken Menu" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Crispy Chicken Menu</h5>
+                        <p class="card-text text-muted">Krokant gebakken kip met een knapperige korst</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-warning text-dark fs-5">€16,50</span>
+                            <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#crispyModal">
+                                <i class="fas fa-info-circle"></i> Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cha Sieuw Menu -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow">
+                    <img src="../images/image10.jpeg" class="card-img-top" alt="Cha Sieuw Menu" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Cha Sieuw Menu</h5>
+                        <p class="card-text text-muted">Geroosterd Chinees varkensvlees</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-warning text-dark fs-5">€17,50</span>
+                            <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#chaSieuwModal">
+                                <i class="fas fa-info-circle"></i> Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beef Rendang Menu -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow">
+                    <img src="../images/image12.jpeg" class="card-img-top" alt="Beef Rendang Menu" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Beef Rendang Menu</h5>
+                        <p class="card-text text-muted">Pittig Indonesisch gestoofde rundvlees</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-warning text-dark fs-5">€18,50</span>
+                            <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#rendangModal">
+                                <i class="fas fa-info-circle"></i> Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mix Vlees Menu -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow">
+                    <img src="../images/image9.jpeg" class="card-img-top" alt="Mix Vlees Menu" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Mix Vlees Menu</h5>
+                        <p class="card-text text-muted">Combinatie van verschillende vleessoorten</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-warning text-dark fs-5">€19,50</span>
+                            <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#mixModal">
+                                <i class="fas fa-info-circle"></i> Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Snacks Sectie -->
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold"><i class="fas fa-drumstick-bite text-warning"></i> Snacks</h2>
+            <p class="text-muted">Perfecte bijgerechten of om te delen</p>
+        </div>
+
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-0">Kip Loempia</h5>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <span class="badge bg-warning text-dark fs-6">€1,50</span>
+                            <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#kipLoempiaModal">
+                                <i class="fas fa-info-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-0">Shanghai Loempia</h5>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <span class="badge bg-warning text-dark fs-6">€1,50</span>
+                            <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#shanghaiModal">
+                                <i class="fas fa-info-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-0">Vegetarisch Loempia</h5>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <span class="badge bg-warning text-dark fs-6">€1,75</span>
+                            <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#veggieLoempiaModal">
+                                <i class="fas fa-info-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-0">Kip Pastei</h5>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <span class="badge bg-warning text-dark fs-6">€3,50</span>
+                            <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#pasteiModal">
+                                <i class="fas fa-info-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-0">Roti Roll</h5>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <span class="badge bg-warning text-dark fs-6">€3,50</span>
+                            <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#rotiModal">
+                                <i class="fas fa-info-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-0">Portie Siomai (3 stuks)</h5>
+                            <small class="text-muted">Kip of varken</small>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <span class="badge bg-warning text-dark fs-6">€3,00</span>
+                            <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#siomaiModal">
+                                <i class="fas fa-info-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-0">Portie Kip Dumplings (3 stuks)</h5>
+                            <small class="text-muted">Kip of varken</small>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <span class="badge bg-warning text-dark fs-6">€3,50</span>
+                            <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#dumplingsModal">
+                                <i class="fas fa-info-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-0">Portie Kip Saté (3 stokjes)</h5>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <span class="badge bg-warning text-dark fs-6">€7,00</span>
+                            <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#sateSnackModal">
+                                <i class="fas fa-info-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-0">Portie Crispy Chicken</h5>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <span class="badge bg-warning text-dark fs-6">€7,00</span>
+                            <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#crispySnackModal">
+                                <i class="fas fa-info-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-0">Portie Friet Met Saus</h5>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <span class="badge bg-warning text-dark fs-6">€4,25</span>
+                            <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#frietModal">
+                                <i class="fas fa-info-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card border-warning border-2 shadow">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-0">Snacks Platter</h5>
+                            <small class="text-muted">Variatie van snacks</small>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <span class="badge bg-warning text-dark fs-6">€12,50</span>
+                            <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#platterModal">
+                                <i class="fas fa-info-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -610,96 +407,89 @@
                     </div>
                 </div>
             </div>
-            <!-- CTA -->
-            <section class="py-5 bg-dark text-white text-center">
-                <div class="container">
 
-                    <div class="col-md-6">
-                        <div class="card border-0 shadow-sm">
-                            <div class="card-body d-flex justify-content-between align-items-center">
-                                <div>
-                                    <h5 class="mb-0">Broodje Kip Kerrie</h5>
-                                </div>
-                                <div class="d-flex gap-2 align-items-center">
-                                    <span class="badge bg-warning text-dark fs-6">€7,50</span>
-                                    <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#broodjeKerrieModal">
-                                        <i class="fas fa-info-circle"></i>
-                                    </button>
-                                </div>
-                            </div>
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-0">Broodje Kip Kerrie</h5>
                         </div>
-                    </div>
-                    <h3 class="fw-bold mb-3">
-                        Klaar om te bestellen?
-                    </h3>
-
-                    <div class="col-md-6">
-                        <div class="card border-0 shadow-sm">
-                            <div class="card-body d-flex justify-content-between align-items-center">
-                                <div>
-                                    <h5 class="mb-0">Broodje Crispy Chicken</h5>
-                                </div>
-                                <div class="d-flex gap-2 align-items-center">
-                                    <span class="badge bg-warning text-dark fs-6">€7,50</span>
-                                    <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#broodjeCrispyModal">
-                                        <i class="fas fa-info-circle"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="card border-0 shadow-sm">
-                            <div class="card-body d-flex justify-content-between align-items-center">
-                                <div>
-                                    <h5 class="mb-0">Broodje Cha Sieuw</h5>
-                                </div>
-                                <div class="d-flex gap-2 align-items-center">
-                                    <span class="badge bg-warning text-dark fs-6">€7,50</span>
-                                    <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#broodjeChaSieuwModal">
-                                        <i class="fas fa-info-circle"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="card border-0 shadow-sm">
-                            <div class="card-body d-flex justify-content-between align-items-center">
-                                <div>
-                                    <h5 class="mb-0">Broodje Hamburger</h5>
-                                </div>
-                                <div class="d-flex gap-2 align-items-center">
-                                    <span class="badge bg-warning text-dark fs-6">€8,50</span>
-                                    <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#broodjeHamburgerModal">
-                                        <i class="fas fa-info-circle"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="card border-0 shadow-sm">
-                            <div class="card-body d-flex justify-content-between align-items-center">
-                                <div>
-                                    <h5 class="mb-0">Broodje Beef Rendang</h5>
-                                </div>
-                                <div class="d-flex gap-2 align-items-center">
-                                    <span class="badge bg-warning text-dark fs-6">€7,50</span>
-                                    <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#broodjeRendangModal">
-                                        <i class="fas fa-info-circle"></i>
-                                    </button>
-                                </div>
-                            </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <span class="badge bg-warning text-dark fs-6">€7,50</span>
+                            <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#broodjeKerrieModal">
+                                <i class="fas fa-info-circle"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-0">Broodje Crispy Chicken</h5>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <span class="badge bg-warning text-dark fs-6">€7,50</span>
+                            <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#broodjeCrispyModal">
+                                <i class="fas fa-info-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-0">Broodje Cha Sieuw</h5>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <span class="badge bg-warning text-dark fs-6">€7,50</span>
+                            <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#broodjeChaSieuwModal">
+                                <i class="fas fa-info-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-0">Broodje Hamburger</h5>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <span class="badge bg-warning text-dark fs-6">€8,50</span>
+                            <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#broodjeHamburgerModal">
+                                <i class="fas fa-info-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="mb-0">Broodje Beef Rendang</h5>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <span class="badge bg-warning text-dark fs-6">€7,50</span>
+                            <button class="btn btn-sm btn-outline-warning" data-bs-toggle="modal" data-bs-target="#broodjeRendangModal">
+                                <i class="fas fa-info-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div></section>
+    </div>
+</section>
 
 <section class="py-5 bg-warning">
     <div class="container text-center">
@@ -709,13 +499,6 @@
             <i class="fas fa-phone"></i> 0610480194
         </a>
     </div>
-</section>
-<a href="tel:0610480194" class="btn btn-warning btn-lg">
-    <i class="fas fa-phone"></i>
-    0610480194
-</a>
-
-</div>
 </section>
 
 <!-- Footer -->
@@ -1528,8 +1311,5 @@
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
