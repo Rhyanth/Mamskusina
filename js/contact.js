@@ -39,7 +39,7 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     formData.append('message', message);
 
     // Verstuur naar PHP backend
-    fetch('https://mamskusina.com/wp-content/backend/send-email.php', {
+    fetch("https://mamskusina.com/wp-content/backend/send-email.php", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
