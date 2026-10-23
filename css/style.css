@@ -3,14 +3,32 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Hero sectie met achtergrondafbeelding */
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url('../images/Afbeelding4-k-1.jpg') center/cover no-repeat;
+    position: relative;
     min-height: 85vh;
     display: flex;
     align-items: center;
+    overflow: hidden;
+    z-index: 1;
 }
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
 
 .min-vh-75 {
     min-height: 75vh;
@@ -60,16 +78,18 @@ footer a:hover {
     background-color: #ffc107 !important;
     color: #000 !important;
 }
+
 /* Logo Styling */
 .navbar-brand {
     font-family: 'Kaushan Script', cursive;
     font-size: 2.5rem !important;
     font-weight: 600 !important;
     color: #d87504 !important;
-    text-shadow: 2px 2px 4px    rgba(255, 115, 0, 0.15);
+    text-shadow: 2px 2px 4px rgba(255, 115, 0, 0.15);
     transition: all 0.3s ease;
     letter-spacing: 0.5px;
 }
+
 @media (max-width: 576px) {
     .navbar-brand {
         font-size: 2.2rem !important;
@@ -78,6 +98,7 @@ footer a:hover {
         text-shadow: 2px 2px 4px rgba(255, 115, 0, 0.25);
     }
 }
+
 .navbar-brand:hover {
     color: #714a00 !important;
     transform: scale(1.05);
@@ -86,15 +107,17 @@ footer a:hover {
 .navbar-brand i {
     display: none;
 }
+
 /* Prijzen badges styling */
 .badge.bg-warning {
     background-color: #f0f0f0 !important; /* Zelfde oranje als logo */
     color: rgb(0, 0, 0) !important;
 }
+
 /* Page Headers met achtergrondafbeelding */
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url('../images/image1.jpeg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/image1.jpeg') center/cover no-repeat;
     min-height: 300px;
     display: flex;
     align-items: center;
@@ -104,24 +127,26 @@ footer a:hover {
 .page-header h1,
 .page-header p {
     color: white !important;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* Verschillende foto's per pagina */
 .page-header.menu-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                      url('../images/image4.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/image4.jpeg');
 }
 
 .page-header.gallery-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                      url('../images/image11.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/image11.jpeg');
 }
 
 .page-header.contact-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                      url('../images/image9.jpeg');
-}/* Minder padding en margin op telefoonschermen */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/image9.jpeg');
+}
+
+/* Minder padding en margin op telefoonschermen */
 @media (max-width: 576px) {
 
     /* Kaarten compacter maken */
@@ -163,6 +188,7 @@ footer a:hover {
         row-gap: 1rem !important;
     }
 }
+
 /* Mobiele weergave: alles onder elkaar */
 @media (max-width: 768px) {
 
@@ -187,6 +213,7 @@ footer a:hover {
     .btn {
         width: 100%;
     }
+
     /* Page Headers met achtergrondafbeelding */
     .page-header {
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
